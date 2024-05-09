@@ -10,7 +10,7 @@
     top: 0;
     left: 0;
     right: 0;
-    background: #f8f8f8;
+    background: #eeeeee;
 }
 
 .inner {
@@ -137,92 +137,49 @@
 }
 
 .main-visual .main-slide .itm01 {
-    position: relative;
-    background: url(../images/main01.png)no-repeat center;
+    background: url(../images/main01.png)no-repeat center/cover;
 }
 
 .main-visual .main-slide .itm02 {
-    position: relative;
-    background: url(../images/main02.png)no-repeat center;
+    background: url(../images/main02.png)no-repeat center/cover;
 }
 
 .main-visual .main-slide .itm03 {
-    position: relative;
-    background: url(../images/main03.png)no-repeat center;
+    background: url(../images/main03.png)no-repeat center/cover;
 }
 
-.main-visual .main-slide .itm {
+.main-visual .main-slide .itm .slogar {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    max-width: 1170px;
+    width: 100%;
+}
+
+.main-visual .main-slide .itm .slogar strong {
+    display: block;
+    margin: 0 0 160px 0;
+
+    font-size: 140px;
+    line-height: 160px;
+
     color: #fff;
 }
 
-.main-visual .main-slide .itm .slogar01 strong {
-    position: absolute;
+.main-visual .main-slide .itm .slogar p {
     display: block;
-    top: 40%;
-    left: 19%;
-    transform: translate(0.6%, 0);
 
-    line-height: 140px;
-    font-size: 120px;
-}
-
-.main-visual .main-slide .itm .slogar01 p {
-    position: absolute;
-    display: block;
-    bottom: 20%;
-    left: 19%;
-    transform: translate(1.3%, 0);
+    font-size: 20px;
+    line-height: 32px;
     color: #ffffffe1;
-    line-height: 24px;
-    font-weight: 300;
-    font-size: 18px;
 }
 
-.main-visual .main-slide .itm .slogar02 strong {
-    position: absolute;
-    display: block;
-    top: 40%;
-    left: 19%;
-    transform: translate(1.1%, 0);
 
-    line-height: 140px;
-    font-size: 120px;
-}
 
-.main-visual .main-slide .itm .slogar02 p {
-    position: absolute;
-    display: block;
-    bottom: 20%;
-    left: 19%;
-    transform: translate(1.6%, 0);
-    color: #ffffffe1;
-    line-height: 24px;
-    font-weight: 300;
-    font-size: 18px;
-}
 
-.main-visual .main-slide .itm .slogar03 strong {
-    position: absolute;
-    display: block;
-    top: 40%;
-    left: 19%;
-    transform: translate(0.7%, 0);
 
-    line-height: 140px;
-    font-size: 120px;
-}
-
-.main-visual .main-slide .itm .slogar03 p {
-    position: absolute;
-    display: block;
-    bottom: 20%;
-    left: 19%;
-    transform: translate(1.9%, 0);
-    color: #ffffffe1;
-    line-height: 24px;
-    font-weight: 300;
-    font-size: 18px;
-}
 
 
 
@@ -343,8 +300,6 @@
     padding: 80px 0;
 
     position: relative;
-
-    border-bottom: 1px solid #eeeeee;
 }
 
 .main-content .tit {
@@ -421,16 +376,17 @@
 
 
 .footer {
-    background: #f8f8f8
+    font-size: 14px;
+    background: #f8f8f8;
 }
 
 .footer .customer {
     display: flex;
     gap: 30px;
     align-items: center;
-    height: 120px;
+    height: 80px;
 
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid #eeeeee;
 }
 
 .footer .customer li {
@@ -448,7 +404,7 @@
 
     width: 1px;
     height: 10px;
-    background: #999;
+    background: #e0e0e0;
 }
 
 .footer .customer a {

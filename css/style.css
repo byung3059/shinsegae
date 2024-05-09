@@ -427,11 +427,28 @@
 .footer .customer {
     display: flex;
     gap: 30px;
-
     align-items: center;
     height: 120px;
 
     border-bottom: 1px solid #dddddd;
+}
+
+.footer .customer li {
+    position: relative;
+}
+
+.footer .customer li~li::after {
+    content: '';
+
+    position: absolute;
+    top: 50%;
+    left: -16px;
+
+    transform: translate(-50%, -50%);
+
+    width: 1px;
+    height: 10px;
+    background: #999;
 }
 
 .footer .customer a {

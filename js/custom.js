@@ -1,10 +1,24 @@
 const mainvisualslide = new Swiper(".main-slide", {
-    speed: 1500,
+    speed: 1000,
     loop: true,
-    // autoplay: {
-    //     delay: 1500,
-    // },
+    autoplay: {
+        delay: 2000,
+    },
 },);
+
+
+const mainproductslide = new Swiper(".product-slide", {
+    loop: true,
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+});
+
 
 const maincontentslide = new Swiper(".content-slide", {
     loop: true,
@@ -14,12 +28,5 @@ const maincontentslide = new Swiper(".content-slide", {
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
-    },
-});
-
-const mainproductslide = new Swiper(".product-slide", {
-    scrollbar: {
-        el: ".swiper-scrollbar",
-        // hide: true,
     },
 });
